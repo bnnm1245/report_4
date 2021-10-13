@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h2 style="color: red">Startpoint: FF1 (falling-edge-triggered flip-flop clocked by Clk)</h2>
+<h2 style="color: red">Report: timing</h2>
 
-<h2 style="color: blue">Endpoint: FF2 (rising-edge-triggered flip-flop clocked by Clk)</h2>
+<h2 style="color: red">------path full</h2>
 
-<h3 style="text-decoration: underline">Path Group: Clk</h3>
+<h2 style="color: red">------delay max</h2>
 
-<h3 style="text-decoration: underline">Path Type: min</h3>
+<h2 style="color: red">------max_paths 1</h2>
+
+<h2 style="color: red">Design: led</h2>
+
+<h2 style="color: red">Version: 1997.01-development</h2>
+
+<h2 style="color: red">Date: Tue Aug 6 12:28:38 1996</h2>
+
+<h3 style="text-decoration: underline">Startpoint: c (input port)</h3>
+
+<h3 style="text-decoration: underline">Endpoint: z2 (output port)</h3>
+
+<h3 style="text-decoration: underline">Path Group: default</h3>
+
+<h3 style="text-decoration: underline">Path Type: max</h3>
 
 <style type="text/css">
 	table 	{border:ridge 5px blue;}
 	table td {padding:10px; border:inset 2px #000;}
-	table tr#ROW15 {background-color:yellow}
-	table tr#ROW16 {background-color:yellow}
-	table tr#ROW17 {background-color:lightgreen}
+	table tr#ROW13 {background-color:yellow}
+	table tr#ROW14 {background-color:yellow}
+	table tr#ROW15 {background-color:red}
 	table tr#ROW1 {font-size:20px; padding:10px; bordercolor:blue; background-color:orange; color: black}
 </style>
 <table>
@@ -26,57 +40,57 @@
 	<th> Path</th> 
 
 <tr id='ROW2'>
-	<td style='padding-right: 100px'> clock Clk (fall edge)   </td> 
-
-	<td bgcolor='lightblue'> 2.00</td> 
-
-	<td bgcolor='gainsboro'> 2.00</td> 
-
-</tr>
-<tr id='ROW3'>
-	<td style='padding-right: 100px'> clock network delay (propagated) </td> 
-
-	<td bgcolor='lightblue'> 0.90*</td> 
-
-	<td bgcolor='gainsboro'> 2.90</td> 
-
-</tr>
-<tr id='ROW4'>
-	<td style='padding-right: 100px'> FF1/CLK (fdmf1a15)   </td> 
+	<td style='padding-right: 100px'> input external delay   </td> 
 
 	<td bgcolor='lightblue'> 0.00</td> 
 
-	<td bgcolor='gainsboro'> 2.90f</td> 
+	<td bgcolor='gainsboro'> 0.00r</td> 
+
+</tr>
+<tr id='ROW3'>
+	<td style='padding-right: 100px'> c (in)     </td> 
+
+	<td bgcolor='lightblue'> 0.00</td> 
+
+	<td bgcolor='gainsboro'> 0.00r</td> 
+
+</tr>
+<tr id='ROW4'>
+	<td style='padding-right: 100px'> u1/Z (IVA)    </td> 
+
+	<td bgcolor='lightblue'> 0.54</td> 
+
+	<td bgcolor='gainsboro'> 0.54f</td> 
 
 </tr>
 <tr id='ROW5'>
-	<td style='padding-right: 100px'> FF1/Q (fdef1a15)   </td> 
+	<td style='padding-right: 100px'> u0/Z (NR2)    </td> 
 
-	<td bgcolor='lightblue'> 0.40*</td> 
+	<td bgcolor='lightblue'> 1.20</td> 
 
-	<td bgcolor='gainsboro'> 3.30f</td> 
+	<td bgcolor='gainsboro'> 1.74r</td> 
 
 </tr>
 <tr id='ROW6'>
-	<td style='padding-right: 100px'> U2/Y (buf1a27)    </td> 
+	<td style='padding-right: 100px'> U8/Z (IVA)    </td> 
 
-	<td bgcolor='lightblue'> 0.05*</td> 
+	<td bgcolor='lightblue'> 0.43</td> 
 
-	<td bgcolor='gainsboro'> 3.35f</td> 
+	<td bgcolor='gainsboro'> 2.17f</td> 
 
 </tr>
 <tr id='ROW7'>
-	<td style='padding-right: 100px'> U3/Y (buf1a27)    </td> 
+	<td style='padding-right: 100px'> U7/Z (OR3)    </td> 
 
-	<td bgcolor='lightblue'> 0.05*</td> 
+	<td bgcolor='lightblue'> 1.24</td> 
 
-	<td bgcolor='gainsboro'> 3.40f</td> 
+	<td bgcolor='gainsboro'> 3.41f</td> 
 
 </tr>
 <tr id='ROW8'>
-	<td style='padding-right: 100px'> FF2/D (fdef1a15)   </td> 
+	<td style='padding-right: 100px'> z2 (out)    </td> 
 
-	<td bgcolor='lightblue'> 0.01*</td> 
+	<td bgcolor='lightblue'> 0.00</td> 
 
 	<td bgcolor='gainsboro'> 3.41f</td> 
 
@@ -90,7 +104,7 @@
 
 </tr>
 <tr id='ROW10'>
-	<td style='padding-right: 100px'> clock Clk (rise edge)   </td> 
+	<td style='padding-right: 100px'> max_delay    </td> 
 
 	<td bgcolor='lightblue'> 0.00</td> 
 
@@ -98,46 +112,30 @@
 
 </tr>
 <tr id='ROW11'>
-	<td style='padding-right: 100px'> clock network delay (propagated) </td> 
+	<td style='padding-right: 100px'> output external delay   </td> 
 
-	<td bgcolor='lightblue'> 1.00*</td> 
+	<td bgcolor='lightblue'> 0.00</td> 
 
-	<td bgcolor='gainsboro'> 1.00</td> 
+	<td bgcolor='gainsboro'> 0.00</td> 
 
 </tr>
 <tr id='ROW12'>
-	<td style='padding-right: 100px'> FF2/CLK (fdef1a15)   </td> 
-
-	<td bgcolor='lightblue'> </td> 
-
-	<td bgcolor='gainsboro'> 1.00r</td> 
-
-</tr>
-<tr id='ROW13'>
-	<td style='padding-right: 100px'> library hold time   </td> 
-
-	<td bgcolor='lightblue'> 0.10*</td> 
-
-	<td bgcolor='gainsboro'> 1.10</td> 
-
-</tr>
-<tr id='ROW14'>
 	<td style='padding-right: 100px'> data required time   </td> 
 
 	<td bgcolor='lightblue'> </td> 
 
-	<td bgcolor='gainsboro'> 1.10</td> 
+	<td bgcolor='gainsboro'> 0.00</td> 
 
 </tr>
-<tr id='ROW15'>
+<tr id='ROW13'>
 	<td> data required time    </td> 
 
 	<td>  </td> 
 
-	<td> 1.10</td> 
+	<td> 0.00</td> 
 
 </tr>
-<tr id='ROW16'>
+<tr id='ROW14'>
 	<td> data arrival time   </td> 
 
 	<td>  </td> 
@@ -145,12 +143,12 @@
 	<td> -3.41</td> 
 
 </tr>
-<tr id='ROW17'>
-	<td> slack (MET)    </td> 
+<tr id='ROW15'>
+	<td> slack (VIOLATED)    </td> 
 
 	<td>  </td> 
 
-	<td> 2.31</td> 
+	<td> -3.41</td> 
 
 </tr>
 </table>
